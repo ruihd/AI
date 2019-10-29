@@ -1,0 +1,23 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+	vector<int> k;
+	int N;
+	int div;
+	int c;
+	int in;
+	cout<<"insira o grau do polinomio"<<endl;
+	cin >> N;
+	N=N+1;
+	cout<<"insira o divisor"<<endl;
+	cin>>div;
+	for(int a = 0;a<N;a++){
+		cout<<"insira o quoficiente de grau "<<N-1-a<<endl;
+		cin >> in;
+		k.push_back(in);}
+	cout<<k[0]<<" ";
+	c = k[0];
+	for(int b = 1;b<N;b++){
+		c = k[b]+(-div)*c;
+		cout <<c<<" ";}}
