@@ -1,0 +1,908 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+
+public class listass : MonoBehaviour
+{
+    public int b = 0;
+    public List<int> lista = new List<int>();
+    public Button maior;
+    void Start()
+    {
+        Button btn = maior.GetComponent<Button>();
+        btn.onClick.AddListener(delegate(){ TaskOnClick(); });
+    }
+    int TaskOnClick()
+    {
+        int x = 1;
+        lista.Add(x);
+        return x;
+        
+    }
+    public List<int> merge = new List<int>();
+    public int final = 0;
+    
+    public List<int> variaveis = new List<int>();
+    public List<int> vecvar_1 = new List<int>();
+    public List<int> vecvar_2 = new List<int>();
+    public List<int> valor = new List<int>();
+    public List<int> numeros = new List<int>();
+    
+    void Update()
+    {
+        
+        if (b == 1)
+        {
+            lista.Add(1);
+            merge.Add(1);
+            b = 0;
+            Debug.Log("ola");
+        }
+        if (b == 2)
+        {
+            lista.Add(2);
+            merge.Add(2);
+            b = 0;
+            Debug.Log("adeus");
+            for(int i = 0; i < 10; i++)
+            {
+                Debug.Log(lista[i]);
+            }
+        }
+        if (b == 3)
+        {
+            lista.Add(3);
+            b = 0;
+        }
+        if (b == 4)
+        {
+            lista.Add(4);
+            b = 0;
+
+        }
+        if (b == 5)
+        {
+            lista.Add(5);
+            b = 0;
+
+        }
+        if (b == 6)
+        {
+            lista.Add(6);
+            b = 0;
+        }
+        if (b == 7)
+        {
+            lista.Add(7);
+            b = 0;
+        }
+        if (b == 8)
+        {
+            lista.Add(8);
+            b = 0;
+
+        }
+        if (b == 9)
+        {
+            lista.Add(9);
+            b = 0;
+        }
+        if (b == 10)
+        {
+            lista.Add(10);
+            b = 0;
+
+        }
+        if (b == 11)
+        {
+            lista.Add(11);
+            b = 0;
+        }
+        if (b == 12)
+        {
+            lista.Add(12);
+            b = 0;
+        }
+        if (b == 13)
+        {
+            lista.Add(13);
+            b = 0;
+        }
+        if (b == 14)
+        {
+            lista.Add(14);
+            b = 0;
+        }
+        if (b == 15)
+        {
+            lista.Add(15);
+            b = 0;
+        }
+        if (b == 16)
+        {
+            lista.Add(16);
+            b = 0;
+
+        }
+        if (b == 17)
+        {
+            lista.Add(17);
+            b = 0;
+        }
+        if (b == 18)
+        {
+            lista.Add(18);
+            b = 0;
+        }
+        if (b == 20)
+        {
+            lista.Add(20);
+            b = 0;
+        }
+        if (b == 21)
+        {
+            lista.Add(21);
+            b = 0;
+
+        }
+        if (b == 22)
+        {
+            lista.Add(22);
+            b = 0;
+        }
+        if (b == 23)
+        {
+            lista.Add(23);
+            b = 0;
+        }
+        if (b == 24)
+        {
+            lista.Add(24);
+            b = 0;
+        }
+        if (b == 25)
+        {
+            lista.Add(25);
+            b = 0;
+        }
+        if (b == 26)
+        {
+            lista.Add(26);
+            b = 0;
+        }
+        if (b == 27)
+        {
+            lista.Add(27);
+            b = 0;
+        }
+        if (b == 28)
+        {
+            lista.Add(28);
+            b = 0;
+        }
+        if (b == 29)
+        {
+            lista.Add(29);
+            b = 0;
+        }
+        if (b == 30)
+        {
+            lista.Add(30);
+            b = 0;
+        }
+        if (b == 31)
+        {
+            lista.Add(31);
+            b = 0;
+        }
+        if (b == 32)
+        {
+            lista.Add(32);
+            b = 0;
+            Debug.Log("2");
+
+
+        }
+    }
+    public int teste(int a)
+        {
+        b = a;
+        lista.Add(a);
+        return 0;
+        }
+    public void Maior()
+    {
+        teste(1);
+    }
+    public void Menor()
+    {
+        teste(2);
+    }
+    public void Maiorigual()
+    {
+        b = 3;
+    }
+    public void Menorigual()
+    {
+        b = 4;
+    }
+    public void Mais()
+    {
+        b = 5;
+    }
+    public void Igual()
+    {
+        b = 6;
+
+    }
+    public void Diferente()
+    {
+        b = 7;
+
+    }
+    public void Equivalente()
+    {
+        b = 8;
+
+    }
+    public void Menos()
+    {
+        b = 9;
+
+    }
+    public void Multiplicar()
+    {
+        b = 10;
+
+    }
+    public void Dividir()
+    {
+        b = 11;
+
+    }
+    public void Elevar()
+    {
+        b = 12;
+
+    }
+    public void Then()
+    {
+        b = 13;
+
+    }
+    public void While()
+    {
+        b = 14;
+
+    }
+    public void If()
+    {
+        b = 15;
+        
+    }
+    public void End()
+    {
+        b = 16;
+        
+
+    }
+    public void Input()
+    {
+        b = 17;
+        
+    }
+    public void Output()
+    {
+        b = 18;
+
+    }    
+    public void For()
+    {
+        b = 20;
+
+    }
+    public void Else ()
+    {
+        b = 21;
+
+    }
+    public void zero()
+    {
+        b = 22;
+
+
+    }
+    public void um()
+    {
+        b = 23;
+       
+
+    }
+    public void dois()
+    {
+        b = 24;
+      
+
+    }
+    public void tres()
+    {
+        b = 25;
+      
+
+    }
+    public void quatro()
+    {
+        b = 26;
+      
+    }
+    public void cinco()
+    {
+        b = 27;
+       
+
+    }
+    public void seis()
+    {
+        b = 28;
+       
+
+    }
+    public void sete()
+    {
+        b = 29;
+       
+
+    }
+    public void oito()
+    {
+        b = 30;
+      
+
+    }
+    public void nove()
+    {
+        b = 31;
+      
+
+    }
+    public void dez()
+    {
+        b = 32;
+
+
+    }
+   
+    public void Test()
+    {
+        lista.Add(33);
+        int i = 0;
+        int posterior = 0;
+        int anterior = 0;
+        int temp2 = 0;
+        int varindex = 0;
+        int nvar = 0;
+        int tamwhile = 0;
+        int pvar = 0;
+        int cond = 0;
+        int nnumero = 0;
+        int temp = 0;
+        int whileb = 0;
+        while (lista[i] < 33)
+        {
+            final= 1;
+            final++;
+            if (lista[i] == 1)
+            {
+                if(whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if(lista[i+1] == 17)
+                {
+                    //input
+                }
+                if(lista[i+1]>=22 && lista[i + 1] <= 32)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if (lista[i + 1] == 19)
+                {
+                    for (int j = 0; j < nvar; j++)
+                    {
+                        if (variaveis[nvar] == vecvar_1[j])
+                        {
+                            posterior = vecvar_2[j];
+                        }
+                    }
+                }
+                if (anterior > posterior)
+                {
+                    valor.Add(1);
+                }
+                else
+                {
+                    valor.Add(0);
+                }
+            }
+            if (lista[i] == 2)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    //input
+                }
+                if (lista[i + 1] >= 22 && lista[i + 1] <= 32)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if (lista[i + 1] == 19)
+                {
+                    for (int j = 0; j < nvar; j++)
+                    {
+                        if (variaveis[nvar] == vecvar_1[j])
+                        {
+                            posterior = vecvar_2[j];
+                        }
+                    }
+                }
+                if (anterior < posterior)
+                {
+                    valor.Add(1);
+                }
+                else
+                {
+                    valor.Add(0);
+                }
+            }
+            if (lista[i] == 3)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    //input
+                }
+                if (lista[i + 1] >= 22 && lista[i + 1] <= 32)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if (lista[i + 1] == 19)
+                {
+                    for (int j = 0; j < nvar; j++)
+                    {
+                        if (variaveis[nvar] == vecvar_1[j])
+                        {
+                            posterior = vecvar_2[j];
+                        }
+                    }
+                }
+                if (anterior >= posterior)
+                {
+                    valor.Add(1);
+                }
+                else
+                {
+                    valor.Add(0);
+                }
+            }
+            if (lista[i] == 4)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    //input
+                }
+                if (lista[i + 1] >= 22 && lista[i + 1] <= 32)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if (lista[i + 1] == 19)
+                {
+                    for (int j = 0; j < nvar; j++)
+                    {
+                        if (variaveis[nvar] == vecvar_1[j])
+                        {
+                            posterior = vecvar_2[j];
+                        }
+                    }
+                }
+                if (anterior <= posterior)
+                {
+                    valor.Add(1);
+                }
+                else
+                {
+                    valor.Add(0); 
+                }
+            }
+            if (lista[i] == 5)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    //input
+                }
+                if (lista[i + 1] >= 22 && lista[i + 1] <= 32)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if (lista[i + 1] == 19)
+                {
+                    for (int j = 0; j < nvar; j++)
+                    {
+                        if (variaveis[nvar] == vecvar_1[j])
+                        {
+                            posterior = vecvar_2[j];
+                        }
+                    }
+                }
+                temp = anterior + posterior;
+            }
+            if (lista[i] == 6)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    //input
+                }
+                if (lista[i + 1] >= 22 && lista[i + 1] <= 32)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if (lista[i + 1] == 19)
+                {
+                    for (int j = 0; j < nvar; j++)
+                    {
+                        if (variaveis[nvar] == vecvar_1[j])
+                        {
+                            posterior = vecvar_2[j];
+                        }
+                    }
+                }
+                temp = anterior;
+            }
+            if (lista[i] == 7)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    //input
+                }
+                if (lista[i + 1] >= 22 && lista[i + 1] <= 32)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if (lista[i + 1] == 19)
+                {
+                    for (int j = 0; j < nvar; j++)
+                    {
+                        if (variaveis[nvar] == vecvar_1[j])
+                        {
+                            posterior = vecvar_2[j];
+                        }
+                    }
+                }
+                if (anterior != posterior)
+                {
+                    valor.Add(1);
+                }
+                else
+                {
+                    valor.Add(0);
+                }
+            }
+            if (lista[i] == 8)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    //input
+                }
+                if (lista[i + 1] >= 22 && lista[i + 1] <= 32)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if (lista[i + 1] == 19)
+                {
+                    for (int j = 0; j < nvar; j++)
+                    {
+                        if (variaveis[nvar] == vecvar_1[j])
+                        {
+                            posterior = vecvar_2[j];
+                        }
+                    }
+                }
+                if (anterior == posterior)
+                {
+                    valor.Add(1);
+                }
+                else
+                {
+                    valor.Add(0);
+                }
+            }
+            if (lista[i] == 9)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    //input
+                }
+                if (lista[i + 1] >= 22 && lista[i + 1] <= 32)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if (lista[i + 1] == 19)
+                {
+                    for (int j = 0; j < nvar; j++)
+                    {
+                        if (variaveis[nvar] == vecvar_1[j])
+                        {
+                            posterior = vecvar_2[j];
+                        }
+                    }
+                }
+                temp = anterior - posterior;
+            }
+            if (lista[i] == 10)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    //input
+                }
+                if (lista[i + 1] >= 22 && lista[i + 1] <= 32)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if (lista[i + 1] == 19)
+                {
+                    for (int j = 0; j < nvar; j++)
+                    {
+                        if (variaveis[nvar] == vecvar_1[j])
+                        {
+                            posterior = vecvar_2[j];
+                        }
+                    }
+                }
+                temp = anterior * posterior;
+            }
+            if (lista[i] == 11)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    //input
+                }
+                if (lista[i + 1] >= 22 && lista[i + 1] <= 32)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if (lista[i + 1] == 19)
+                {
+                    for (int j = 0; j < nvar; j++)
+                    {
+                        if (variaveis[nvar] == vecvar_1[j])
+                        {
+                            posterior = vecvar_2[j];
+                        }
+                    }
+                }
+                temp = anterior / posterior;
+            }
+            if (lista[i] == 12)         //trabalhar neste
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    //input
+                }
+                if (lista[i + 1] >= 22 && lista[i + 1] <= 32)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if (lista[i + 1] == 19)
+                {
+                    for (int j = 0; j < nvar; j++)
+                    {
+                        if (variaveis[nvar] == vecvar_1[j])
+                        {
+                            posterior = vecvar_2[j];
+                        }
+                    }
+                }
+                temp = anterior * anterior;
+            }
+            if (lista[i] == 13)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (cond == 1)
+                {
+                    if (valor[-1] == 0)     //erro aqui precisa de mais 1 lista
+                    {
+                        int k = 0;
+                        while(lista[i+k] != 16)     //possivel erro se k estiver errado
+                        {
+                            k++;
+                        }
+                        i = i + k;
+                    }
+                }
+                if (cond == 2)
+                {
+                    if(valor[-1] == 1)      //erro aqui precisa de mais 1 lista
+                    {
+                        int k = 0;
+                        while (lista[i + k] != 16)      //possivel erro se k estiver errado
+                        {
+                            k++;
+                        }
+                        i = i + k;
+                    }
+                }
+                if (cond == 3)
+                {
+                    if (valor[-1] == 0)     //erro aqui precisa de mais 1 lista
+                    {
+                        int k = 0;
+                        while (lista[i + k] != 16)      //possivel erro se k estiver errado
+                        {
+                            k++;
+                        }
+                        i = i + k;
+                    }
+                }
+            }
+            if (lista[i] == 14)
+            {
+                cond = 3;
+            }
+            if (lista[i] == 15)
+            {
+                cond = 1;
+            }
+            if (lista[i] == 16)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (pvar == 1)
+
+                {
+                    pvar = 0;
+                    vecvar_2[varindex] = temp;
+                    
+                }
+                if (cond == 3)
+                {
+                    i = i - tamwhile;       //erro no tamwhile
+                    whileb = 0;
+
+                }
+            }
+            if (lista[i] == 17)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                //input
+            }
+            if (lista[i] == 18)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                //output
+            }
+            if (lista[i] == 19)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                for (int j = 0; j < nvar; j++)
+                {
+                    if (variaveis[nvar] == vecvar_1[j])
+                    {
+                        temp2 = 1;
+                    }
+                }
+                if (temp2 == 0)
+                {
+                    vecvar_1.Add(variaveis[nvar]);
+                    vecvar_2.Add(0);
+                    
+                }
+                nvar++;
+                if (lista[i + 1] == 6)
+                {
+                    pvar = 1;
+
+                    for(int l = 0; l < nvar; l++)       //improvement existir outra variavavel para nvar; q n marca repetições.
+                    {
+                        if (variaveis[nvar] == vecvar_1[l])
+                        {
+                            varindex = l;
+                        }
+                    }
+                }
+                if (lista[i - 1]==6)
+                {
+                    for(int j = 0;j < nvar; j++)
+                    {
+                        if(variaveis[nvar] == vecvar_1[j])
+                        {
+                            anterior = vecvar_2[j];
+                        }
+                    }
+                }
+
+            }
+            if (lista[i] == 20)
+            {
+                cond = 4;
+            }
+            if (lista[i] == 21)
+            {
+                cond = 2;
+            }
+            i++;
+        }
+    }
+
+}
+
+
+//falta 20  (For)
