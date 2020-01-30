@@ -1,0 +1,902 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using System;
+
+
+public class listass : MonoBehaviour
+{
+    public int b = 0;
+    public List<int> lista = new List<int>();
+    public Button maior;
+    public int publica;
+    public float anterior;
+
+    public float temp;
+    public string inputstring;
+    public GameObject inputField;
+    public GameObject textDisplay;
+    public int input;
+    public string outputstring;
+    float output;
+    
+    public List<GameObject> merge = new List<GameObject>();
+    public int final = 0;
+    public float posterior;
+    public List<int> variaveis = new List<int>();
+    public List<int> vecvar_1 = new List<int>();
+    public List<int> vecvar_2 = new List<int>();
+    public List<int> valor = new List<int>();
+    public List<int> numeros = new List<int>();
+    public GameObject[] content;
+    public void Test()
+    {
+        inputstring = inputField.GetComponent<Text>().text;
+        input = Convert.ToInt32(inputstring);
+        int r = 0;
+        content = GameObject.FindGameObjectsWithTag("Respawn");
+        GameObject aa = GameObject.Find("maio_unity2(Clone)");
+        GameObject bb = GameObject.Find("menor_unity(Clone)");
+        GameObject cc = GameObject.Find("maiorrouigual_unity(Clone)");
+        GameObject dd = GameObject.Find("menorouigual_unity(Clone)");
+        GameObject ee = GameObject.Find("mais_unity(Clone)");
+        GameObject ff = GameObject.Find("igual_unity(Clone)");
+        GameObject gg = GameObject.Find("deiferente_unity(Clone)");
+        GameObject hh = GameObject.Find("equivalente_unity(Clone)");
+        GameObject ii = GameObject.Find("menos_unity(Clone)");
+        GameObject jj = GameObject.Find("multiplicar_unity(Clone)");
+        GameObject kk = GameObject.Find("dividri_unity(Clone)");
+        GameObject ll = GameObject.Find("levantado_unity(Clone)");
+        GameObject mm = GameObject.Find("then_unity(Clone)");
+        GameObject nn = GameObject.Find("while_unity(Clone)");
+        GameObject oo = GameObject.Find("if_unity(Clone)");
+        GameObject pp = GameObject.Find("end_unity(Clone)");
+        GameObject qq = GameObject.Find("input_unity(Clone)");
+        GameObject rr = GameObject.Find("output_unity(Clone)");
+        GameObject ss = GameObject.Find("for_unity(Clone)");
+        GameObject tt = GameObject.Find("else_unity(Clone)");
+        GameObject uu = GameObject.Find("0_unity(Clone)");
+        GameObject vv = GameObject.Find("1_unity(Clone)");
+        GameObject ww = GameObject.Find("2_unity(Clone)");
+        GameObject xx = GameObject.Find("3_unity(Clone)");
+        GameObject yy = GameObject.Find("4_unity(Clone)");
+        GameObject zz = GameObject.Find("5_unity(Clone)");
+        GameObject aaa = GameObject.Find("6_unity(Clone)");
+        GameObject bbb = GameObject.Find("7_unity(Clone)");
+        GameObject ccc = GameObject.Find("8_unity(Clone)");
+        GameObject ddd = GameObject.Find("9_unity(Clone)");
+        GameObject eee = GameObject.Find("10_unity(Clone)");
+        GameObject fff = GameObject.Find("a_unity(Clone)");
+        GameObject ggg = GameObject.Find("b_unity(Clone)");
+        GameObject hhh = GameObject.Find("c_unity(Clone)");
+        GameObject iii = GameObject.Find("d_unity(Clone)");
+        GameObject jjj = GameObject.Find("e_unity(Clone)");
+        GameObject kkk = GameObject.Find("f_unity(Clone)");
+        GameObject lll = GameObject.Find("g_unity(Clone)");
+        GameObject mmm = GameObject.Find("h_unity(Clone)");
+        GameObject nnn = GameObject.Find("i_unity(Clone)");
+        GameObject ooo = GameObject.Find("j_unity(Clone)");
+        GameObject ppp = GameObject.Find("k_unity(Clone)");
+        GameObject qqq = GameObject.Find("l_unity(Clone)");
+        GameObject rrr = GameObject.Find("m_unity(Clone)");
+        GameObject sss= GameObject.Find("n_unity(Clone)");
+        GameObject ttt = GameObject.Find("o_unity(Clone)");
+        GameObject uuu= GameObject.Find("p_unity(Clone)");
+        GameObject vvv = GameObject.Find("q_unity(Clone)");
+        GameObject www = GameObject.Find("r_unity(Clone)");
+        GameObject xxx = GameObject.Find("s_unity(Clone)");
+        GameObject yyy = GameObject.Find("t_unity(Clone)");
+        GameObject zzz = GameObject.Find("u_unity(Clone)");
+        GameObject aaaa = GameObject.Find("v_unity(Clone)");
+        GameObject bbbb = GameObject.Find("w_unity(Clone)");
+        GameObject cccc = GameObject.Find("x_unity(Clone)");
+        GameObject dddd = GameObject.Find("y_unity(Clone)");
+        GameObject eeee = GameObject.Find("z_unity(Clone)");
+
+        //continuar
+        foreach (GameObject respawn in content)
+        {
+
+            if (string.Compare(content[r].name, aa.name)==0)
+            {
+                lista.Add(1);
+            }
+            if (string.Compare(content[r].name, bb.name) == 0)
+            {
+                lista.Add(2);
+            }
+            if (string.Compare(content[r].name, cc.name) == 0)
+            {
+                lista.Add(3);
+            }
+            if (string.Compare(content[r].name, dd.name) == 0)
+            {
+                lista.Add(4);
+            }
+            if (string.Compare(content[r].name, ee.name) == 0)
+            {
+                lista.Add(5);
+            }
+            if (string.Compare(content[r].name, ff.name) == 0)
+            {
+                lista.Add(6);
+            }
+            if (string.Compare(content[r].name, gg.name) == 0)
+            {
+                lista.Add(7);
+            }
+            if (string.Compare(content[r].name, hh.name) == 0)
+            {
+                lista.Add(8);
+            }
+            if (string.Compare(content[r].name, ii.name) == 0)
+            {
+                lista.Add(9);
+            }
+            if (string.Compare(content[r].name, jj.name) == 0)
+            {
+                lista.Add(10);
+            }
+            if (string.Compare(content[r].name, kk.name) == 0)
+            {
+                lista.Add(11);
+            }
+            if (string.Compare(content[r].name, ll.name) == 0)
+            {
+                lista.Add(12);
+            }
+            if (string.Compare(content[r].name, mm.name) == 0)
+            {
+                lista.Add(13);
+            }
+            if (string.Compare(content[r].name, nn.name) == 0)
+            {
+                lista.Add(14);
+            }
+            if (string.Compare(content[r].name, oo.name) == 0)
+            {
+                lista.Add(15);
+            }
+            if (string.Compare(content[r].name, pp.name) == 0)
+            {
+                lista.Add(16);
+            }
+            if (string.Compare(content[r].name, qq.name) == 0)
+            {
+                lista.Add(17);
+            }
+            if (string.Compare(content[r].name, rr.name) == 0)
+            {
+                lista.Add(18);
+            }
+            if (string.Compare(content[r].name, ss.name) == 0)
+            {
+                lista.Add(19);
+            }
+            if (string.Compare(content[r].name, tt.name) == 0)
+            {
+                lista.Add(20);
+            }
+            if (string.Compare(content[r].name, uu.name) == 0)
+            {
+                lista.Add(21);
+                numeros.Add(0);
+            }
+            if (string.Compare(content[r].name, vv.name) == 0)
+            {
+                lista.Add(22);
+                numeros.Add(1);
+            }
+            if (string.Compare(content[r].name, ww.name) == 0)
+            {
+                lista.Add(23);
+                numeros.Add(2);
+            }
+            if (string.Compare(content[r].name, xx.name) == 0)
+            {
+                lista.Add(24);
+                numeros.Add(3);
+            }
+            if (string.Compare(content[r].name, yy.name) == 0)
+            {
+                lista.Add(25);
+                numeros.Add(4);
+
+            }
+            if (string.Compare(content[r].name, zz.name) == 0)
+            {
+                numeros.Add(5);
+                lista.Add(26);
+            }
+            if (string.Compare(content[r].name, aaa.name) == 0)
+            {
+                lista.Add(27);
+                numeros.Add(6);
+            }
+            if (string.Compare(content[r].name, bbb.name) == 0)
+            {
+                lista.Add(28);
+                numeros.Add(7);
+            }
+            if (string.Compare(content[r].name, ccc.name) == 0)
+            {
+                lista.Add(29);
+                numeros.Add(8);
+            }
+            if (string.Compare(content[r].name, ddd.name) == 0)
+            {
+                lista.Add(30);
+                numeros.Add(9);
+            }
+            if (string.Compare(content[r].name, eee.name) == 0)
+            {
+                lista.Add(31);
+                numeros.Add(10);
+            }
+            if (string.Compare(content[r].name, fff.name) == 0)
+            {
+                lista.Add(32);
+            }
+            if (string.Compare(content[r].name, ggg.name) == 0)
+            {
+                lista.Add(34);
+            }
+            if (string.Compare(content[r].name, hhh.name) == 0)
+            {
+                lista.Add(35);
+            }
+            if (string.Compare(content[r].name, iii.name) == 0)
+            {
+                lista.Add(36);
+            }
+            if (string.Compare(content[r].name, jjj.name) == 0)
+            {
+                lista.Add(37);
+            }
+            if (string.Compare(content[r].name, kkk.name) == 0)
+            {
+                lista.Add(38);
+            }
+            if (string.Compare(content[r].name, lll.name) == 0)
+            {
+                lista.Add(39);
+            }
+            if (string.Compare(content[r].name, mmm.name) == 0)
+            {
+                lista.Add(40);
+            }
+            if (string.Compare(content[r].name, nnn.name) == 0)
+            {
+                lista.Add(41);
+            }
+            if (string.Compare(content[r].name, ooo.name) == 0)
+            {
+                lista.Add(42);
+            }
+            if (string.Compare(content[r].name, ppp.name) == 0)
+            {
+                lista.Add(43);
+            }
+            if (string.Compare(content[r].name, qqq.name) == 0)
+            {
+                lista.Add(44);
+            }
+            if (string.Compare(content[r].name, rrr.name) == 0)
+            {
+                lista.Add(45);
+            }
+            if (string.Compare(content[r].name, sss.name) == 0)
+            {
+                lista.Add(46);
+            }
+            if (string.Compare(content[r].name, ttt.name) == 0)
+            {
+                lista.Add(47);
+            }
+            if (string.Compare(content[r].name, uuu.name) == 0)
+            {
+                lista.Add(48);
+            }
+            if (string.Compare(content[r].name, vvv.name) == 0)
+            {
+                lista.Add(49);
+            }
+            if (string.Compare(content[r].name, www.name) == 0)
+            {
+                lista.Add(50);
+            }
+            if (string.Compare(content[r].name, xxx.name) == 0)
+            {
+                lista.Add(51);
+            }
+            if (string.Compare(content[r].name, yyy.name) == 0)
+            {
+                lista.Add(52);
+            }
+
+            if (string.Compare(content[r].name, zzz.name) == 0)
+            {
+                lista.Add(53);
+            }if (string.Compare(content[r].name, aaaa.name) == 0)
+            {
+                lista.Add(54);
+            }
+            if (string.Compare(content[r].name, bbbb.name) == 0)
+            {
+                lista.Add(55);
+            }
+            if (string.Compare(content[r].name, cccc.name) == 0)
+            {
+                lista.Add(56);
+            }
+            if (string.Compare(content[r].name, dddd.name) == 0)
+            {
+                lista.Add(55);
+            }
+            if (string.Compare(content[r].name, eeee.name) == 0)
+            {
+                lista.Add(56);
+            }
+            //continuar
+            r++;
+        }
+
+        lista.Add(33);
+        int i = 0;
+        int temp2 = 0;
+        int varindex = 0;
+        int nvar = 0;
+        int tamwhile = 0;
+        int pvar = 0;
+        int cond = 0;
+        int nvalor = 0;
+        int nnumero = 0;
+        int nnnumero = 0;
+        int whileb = 0;
+        while (lista[i] < 33)
+        {
+            final= 1;
+            final++;
+            if (lista[i] == 17)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                anterior = input;
+            }
+            if (lista[i] == 1)
+            {
+                if(whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if(lista[i+1] == 17)
+                {
+                    posterior = input;
+                    i++;
+                }
+                if (lista[i - 1] >= 21 && lista[i - 1] <= 31 && anterior == 0)
+                {
+                    anterior = numeros[nnumero];
+                    nnnumero++;
+                    nnumero++;
+                }
+                if (lista[i + 1] >= 21 && lista[i + 1] <= 31)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                    i++;
+                }
+                if (anterior > posterior)
+                {
+                    valor.Add(1);
+                    nvalor++;
+                }
+                else
+                {
+                    valor.Add(0);
+                    nvalor++;
+                }
+            }
+            if (lista[i] == 2)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    posterior = input;
+                    i++;
+                }
+                if (lista[i - 1] >= 21 && lista[i - 1] <= 31 && anterior == 0)
+                {
+                    anterior = numeros[nnumero];
+                    nnnumero++;
+                    nnumero++;
+                }
+                if (lista[i + 1] >= 21 && lista[i + 1] <= 31)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                    i++;
+                }
+                if (anterior < posterior)
+                {
+                    valor.Add(1);
+                    nvalor++;
+                }
+                else
+                {
+                    valor.Add(0);
+                    nvalor++;
+                }
+            }
+            if (lista[i] == 3)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    posterior = input;
+                    i++;
+                }
+                if (lista[i - 1] >= 21 && lista[i - 1] <= 31 && anterior == 0)
+                {
+                    anterior = numeros[nnumero];
+                    nnnumero++;
+                    nnumero++;
+                }
+                if (lista[i + 1] >= 21 && lista[i + 1] <= 31)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                    i++;
+                }
+                if (anterior >= posterior)
+                {
+                    valor.Add(1);
+                    nvalor++;
+                }
+                else
+                {
+                    valor.Add(0);
+                    nvalor++;
+                }
+            }
+            if (lista[i] == 4)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    posterior = input;
+                    i++;
+                }
+                if (lista[i - 1] >= 21 && lista[i - 1] <= 31 && anterior == 0)
+                {
+                    anterior = numeros[nnumero];
+                    nnnumero++;
+                    nnumero++;
+                }
+                if (lista[i + 1] >= 21 && lista[i + 1] <= 31)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                    i++;
+                }
+                if (anterior <= posterior)
+                {
+                    valor.Add(1);
+                    nvalor++;
+                }
+                else
+                {
+                    valor.Add(0);
+                    nvalor++;
+                }
+            }
+            if (lista[i] == 5)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    posterior = input;
+
+                    i++;
+                }
+                if (lista[i - 1] >= 21 && lista[i - 1] <= 31 && anterior == 0)
+                {
+                    anterior = numeros[nnumero];
+                    nnnumero++;
+                    nnumero++;
+
+                }
+                if (lista[i + 1] >= 21 && lista[i + 1] <= 31)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                    i++;
+                }                
+                temp = anterior + posterior;
+                anterior = temp;
+
+            }
+            if (lista[i] == 6)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    posterior = input;
+                }
+                if (lista[i - 1] >= 21 && lista[i - 1] <= 31 && anterior == 0)
+                {
+                    anterior = numeros[nnumero];
+                    nnnumero++;
+                    nnumero++;
+                }
+                if (lista[i + 1] >= 21 && lista[i + 1] <= 31)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                }
+                if(lista[i + 1] == 18)
+                {
+                    
+                    output = anterior;
+                }
+            }
+            if (lista[i] == 7)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    posterior = input;
+                    i++;
+                }
+                if (lista[i - 1] >= 21 && lista[i - 1] <= 31 && anterior == 0)
+                {
+                    anterior = numeros[nnumero];
+                    nnnumero++;
+                    nnumero++;
+                }
+                if (lista[i + 1] >= 21 && lista[i + 1] <= 31)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                    i++;
+                }
+                if (anterior != posterior)
+                {
+                    valor.Add(1);
+                    nvalor++;
+                }
+                else
+                {
+                    valor.Add(0);
+                    nvalor++;
+                }
+            }
+            if (lista[i] == 8)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    posterior = input;
+                    i++;
+                }
+                if (lista[i - 1] >= 21 && lista[i - 1] <= 31 && anterior == 0)
+                {
+                    anterior = numeros[nnumero];
+                    nnnumero++;
+                    nnumero++;
+                }
+                if (lista[i + 1] >= 21 && lista[i + 1] <= 31)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                    i++;
+                }
+                if (anterior == posterior)
+                {
+                    valor.Add(1);
+                    nvalor++;
+                }
+                else
+                {
+                    valor.Add(0);
+                    nvalor++;
+                }
+            }
+            if (lista[i] == 9)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    posterior = input;
+                    i++;
+                }
+                if (lista[i -  1] >= 21 && lista[i - 1] <= 31 && anterior == 0)
+                {
+                    anterior = numeros[nnumero];
+                    nnnumero++;
+                    nnumero++;
+                }
+                if (lista[i + 1] >= 21 && lista[i + 1] <= 31)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                    i++;
+                }                
+                temp = anterior - posterior;
+                anterior = temp;
+            }
+            if (lista[i] == 10)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    posterior = input;
+                    i++;
+                }
+                if (lista[i - 1] >= 21 && lista[i - 1] <= 31 && anterior == 0)
+                {
+                    anterior = numeros[nnumero];
+                    nnnumero++;
+                    nnumero++;
+                }
+                if (lista[i + 1] >= 21 && lista[i + 1] <= 31)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                    i++;
+                }
+                temp = anterior * posterior;
+                anterior = temp;
+            }
+            if (lista[i] == 11)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    posterior = input;
+                    i++;
+                }
+                if (lista[i - 1] >= 21 && lista[i - 1] <= 31 && anterior == 0)
+                {
+                    anterior = numeros[nnumero];
+                    nnnumero++;
+                    nnumero++;
+                }
+                if (lista[i + 1] >= 21 && lista[i + 1] <= 31)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                    i++;
+                }
+                temp = anterior / posterior;
+                anterior = temp;
+            }
+            if (lista[i] == 12)         //trabalhar neste
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (lista[i + 1] == 17)
+                {
+                    posterior = input;
+                    i++;
+                }
+                if (lista[i - 1] >= 21 && lista[i - 1] <= 31 && anterior == 0)
+                {
+                    anterior = numeros[nnumero];
+                    nnnumero++;
+                    nnumero++;
+                }
+                if (lista[i + 1] >= 21 && lista[i + 1] <= 31)
+                {
+                    posterior = numeros[nnumero];
+                    nnumero++;
+                    i++;
+                }
+                temp = anterior;
+                for (int cbk = 1; cbk < posterior; cbk++)
+                {
+                    
+                    temp = temp * anterior;
+                }
+                anterior = temp;
+            }
+            if (lista[i] == 13)
+            {
+                temp = 0;
+                anterior = 0;
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (cond == 1)
+                {
+
+                    if (valor[nvalor - 1] == 0)     //erro aqui precisa de mais 1 lista
+                    {
+
+                        int k = 0;
+                        while(lista[i+k] != 16)     //possivel erro se k estiver errado
+                        {
+                            k++;
+                            if (lista[i+k] >= 21 && lista[i+k] <= 31)
+                            {
+                                nnnumero++;
+                                nnumero++;
+                            }
+                            
+                        }
+                        i = i + k-1;
+                    }
+                }
+                if (cond == 2)
+                {
+                    if(valor[nvalor-1] == 1)      //erro aqui precisa de mais 1 lista
+                    {
+                        int k = 0;
+                        while (lista[i + k] != 16)      //possivel erro se k estiver errado
+                        {
+                            k++;
+                        }
+                        i = i + k-1;
+                    }
+                }
+                if (cond == 3)
+                {
+                    if (valor[nvalor - 1] == 0)     //erro aqui precisa de mais 1 lista
+                    {
+                        int k = 0;
+                        while (lista[i + k] != 16)      //possivel erro se k estiver errado
+                        {
+                            k++;
+                        }
+                        i = i + k - 1;
+                    }
+                }
+            }
+            if (lista[i] == 14)
+            {
+                cond = 3;
+            }
+            if (lista[i] == 15)
+            {
+                cond = 1;
+            }
+            if (lista[i] == 16)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (pvar == 1)
+
+                {
+                    pvar = 0;
+                    
+                }
+                if (cond == 3)
+                {
+                    i = i - tamwhile;       //erro no tamwhile
+                    whileb = 0;
+
+                }
+            }
+            
+
+            if (lista[i] == 19)
+            {
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                for (int j = 0; j < nvar; j++)
+                {
+                    if (variaveis[nvar] == vecvar_1[j])
+                    {
+                        temp2 = 1;
+                    }
+                }
+                if (temp2 == 0)
+                {
+                    vecvar_1.Add(variaveis[nvar]);
+                    vecvar_2.Add(0);
+                    
+                }
+                nvar++;
+                if (lista[i + 1] == 6)
+                {
+                    pvar = 1;
+
+                    for(int l = 0; l < nvar; l++)       //improvement existir outra variavavel para nvar; q n marca repetições.
+                    {
+                        if (variaveis[nvar] == vecvar_1[l])
+                        {
+                            varindex = l;
+                        }
+                    }
+                }
+                if (lista[i - 1]==6)
+                {
+                    for(int j = 0;j < nvar; j++)
+                    {
+                        if(variaveis[nvar] == vecvar_1[j])
+                        {
+                            anterior = vecvar_2[j];
+                        }
+                    }
+                }
+
+            }
+            if (lista[i] == 20)
+            {
+                temp = 0;
+                anterior = 0;
+                if (whileb == 1)
+                {
+                    tamwhile++;
+                }
+                if (valor[nvalor - 1] == 1)    
+                {
+
+                    int k = 0;
+                    while (lista[i + k] != 16)     
+                    {
+                        k++;
+                        if (lista[i + k] >= 21 && lista[i + k] <= 31)
+                        {
+                            nnnumero++;
+                            nnumero++;
+                        }
+                    }
+                    i = i + k - 1;
+                }
+            }
+
+            
+            i++;
+        }
+        outputstring = Convert.ToString(output);
+        textDisplay.GetComponent<Text>().text = outputstring;
+        
+    }
+
+
+
+}
+
+
+//falta 20  (For)
